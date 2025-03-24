@@ -39,7 +39,6 @@ export class NavComponent {
     //     this.initNav();
     //   }
     // });
-
   }
 
   closeForm(): void {
@@ -55,6 +54,11 @@ export class NavComponent {
             label: 'Home',
             icon: 'pi pi-home',
             routerLink: '/home',
+          },
+          {
+            label: 'Book',
+            icon: 'pi pi-book',
+            routerLink: '/book',
           },
           {
             label: currentUser.user.username,
@@ -74,6 +78,11 @@ export class NavComponent {
           label: 'Home',
           icon: 'pi pi-home',
           routerLink: '/home',
+        },
+        {
+          label: 'Book',
+          icon: 'pi pi-book',
+          routerLink: '/book',
         },
         {
           label: 'Register',

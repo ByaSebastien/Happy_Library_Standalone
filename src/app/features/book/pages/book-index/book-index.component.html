@@ -1,0 +1,7 @@
+<p-dataView [value]="books">
+  <ng-template #list let-books>
+    @for (book of books; track book.isbn) {
+      <p>{{ book.title }}</p>
+    }
+  </ng-template>
+</p-dataView>
