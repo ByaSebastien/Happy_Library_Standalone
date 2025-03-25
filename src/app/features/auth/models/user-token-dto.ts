@@ -1,5 +1,5 @@
 export interface UserTokenDto {
-  access_token: string;
+  accessToken: string;
   user: UserSessionDto;
 }
 

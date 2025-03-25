@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import {bookResolver} from './features/book/resolvers/book.resolver';
+import {isConnectedGuard} from './shared/guards/is-connected.guard';
 
 export const routes: Routes = [
   {
@@ -17,5 +18,10 @@ export const routes: Routes = [
     resolve: {
       books: bookResolver
     }
+  },
+  {
+    path: 'book/create',
+    loadComponent: () => import('./features/book/pages/book-create/book-create.component').then(m => m.BookCreateComponent),
+    canActivate: [isConnectedGuard]
   },
 ];

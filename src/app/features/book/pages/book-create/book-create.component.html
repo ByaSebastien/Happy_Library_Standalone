@@ -1,0 +1,23 @@
+<form [formGroup]="bookForm" (ngSubmit)="submit()">
+  <p-floatlabel variant="on">
+    <input pInputText id="isbn" formControlName="isbn"/>
+    <label for="isbn">ISBN</label>
+  </p-floatlabel>
+  <p-floatlabel variant="on">
+    <input pInputText id="title" formControlName="title"/>
+    <label for="title">Title</label>
+  </p-floatlabel>
+  <p-floatlabel variant="on">
+    <input pInputText id="author" formControlName="author"/>
+    <label for="author">Author</label>
+  </p-floatlabel>
+  <p-floatlabel variant="on">
+    <input pInputText id="description" formControlName="description"/>
+    <label for="description">Description</label>
+  </p-floatlabel>
+  <p-floatlabel variant="on">
+    <p-datePicker id="releaseDate" formControlName="releaseDate"></p-datePicker>
+    <label for="releaseDate">Release date</label>
+  </p-floatlabel>
+  <p-button severity="success" label="Create" type="submit"></p-button>
+</form>

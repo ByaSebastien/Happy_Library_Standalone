@@ -88,6 +88,22 @@
       "author": "Chris Richardson",
       "description": "A guide to building reliable, scalable microservice applications.",
       "releaseDate": "2018-09-01"
+    },
+    {
+      "isbn": "12345678910",
+      "title": "Test",
+      "author": "Test",
+      "description": null,
+      "releaseDate": "2025-03-10T23:00:00.000Z",
+      "id": 11
+    },
+    {
+      "isbn": "12345678911",
+      "title": "aaa",
+      "author": "aaa",
+      "description": "aaa",
+      "releaseDate": "2025-03-10T23:00:00.000Z",
+      "id": 12
     }
   ]
 }

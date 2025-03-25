@@ -1,3 +1,6 @@
+@if (isConnected()) {
+<p-button label="Create new" severity="success" routerLink="/book/create"></p-button>
+}
 <p-dataView [value]="books">
   <ng-template #list let-books>
     @for (book of books; track book.isbn) {
